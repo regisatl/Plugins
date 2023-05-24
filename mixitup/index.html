@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Intégration des liens script jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="./pluginJS/jquery-3.7.0.min.js"></script>
+    <script src="./mixitupJS/mixitup.min.js"></script>
+    <!-- Intégration du CSS de slick slider -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Mixitup</title>
+    <!-- Intégration du code JS -->
+    <!-- <script>
+        $(document).ready(function () {
+            $("#parent").slick({
+                infinite: true,
+                slidesToShow: 1,
+                dots: false,
+                autoplay: true,
+                autoplaySpeed: 5000,
+            });
+        });
+    </script> -->
+</head>
+
+<body>
+
+    <article>
+        <h1>Mixitup Filters</h1>
+        <button data-filter="all" id="all">ALL</button>
+        <button data-filter=".item1" id="blue">BLUE</button>
+        <button data-filter=".item2" id="green">GREEN</button>
+        <button data-filter=".item3" id="violet">VIOLET</button>
+        <div id="parent">
+           <div class=" mix item item1">Blue</div>
+           <div class=" mix item item2">Green</div>
+           <div class=" mix item item3">Violet</div>
+           <div class=" mix item item1">Blue</div>
+           <div class=" mix item item2">Green</div>
+           <div class=" mix item item3">Violet</div>
+           <div class=" mix item item1">Blue</div>
+           <div class=" mix item item2">Green</div>
+           <div class=" mix item item3">Violet</div>
+           <div class=" mix item item1">Blue</div>
+           <div class=" mix item item2">Green</div>
+           <div class=" mix item item3">Violet</div>
+        </div>
+    </article>
+    <script>
+        let mixer = mixitup("#parent");
+    </script>
+</body>
+
+</html>
